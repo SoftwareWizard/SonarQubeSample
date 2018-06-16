@@ -1,15 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using BusinessLogic;
 
 namespace SonarQubeSample
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            const int operandA = 1;
+            const int operandB = 1;
+
+            var result = new Calculator().Add(operandA, operandB);
+
+            Console.WriteLine($"{operandA} + {operandA} = {result}");
+
+            Console.WriteLine("--- Press Key ---");
+            Console.ReadLine();
         }
     }
 }
