@@ -3,15 +3,20 @@ SET TEST_FILE=BusinessLogic.Test.dll
 
 SET SONAR_KEY=SimonsUniqueProject
 SET SONAR_PROJECT_NAME=SonarQubeSample
-SET SONAR_PROJECT_VERSION=1.0
+SET SONAR_PROJECT_VERSION=1.4
 SET SONAR_URL=http://localhost:9000
 SET SONAR_LOGIN_TOKEN=0c89b8abcfe390a5e172f976fa9a0f63a4241dc1
 SET SONAR_FOLDER=.sonarqube\results
 SET COVERAGE_FOLDER=covarageReport
 
 @echo --------------- Start SonarQube Tracking ---------------
-SonarQube.Scanner.MSBuild.exe begin /k:"%SONAR_KEY%" /d:sonar.host.url="%SONAR_URL%" /d:sonar.login="%SONAR_LOGIN_TOKEN%"
-
+SonarQube.Scanner.MSBuild.exe begin^
+ /k:"%SONAR_KEY%"^
+ /d:sonar.host.url="%SONAR_URL%"^
+ /d:sonar.login="%SONAR_LOGIN_TOKEN%"^
+ /d:sonar.cs.dotcover.reportsPaths="%SONAR_FOLDER%\%COVERAGE_FOLDER%\dotCover.html"^
+ /n:"%SONAR_PROJECT_NAME%"^
+ /v:"%SONAR_PROJECT_VERSION%"
 
 REM SonarScanner.MSBuild.exe begin^
 REM  /k:"%SONAR_KEY%"^

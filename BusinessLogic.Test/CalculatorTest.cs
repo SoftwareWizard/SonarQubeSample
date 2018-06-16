@@ -10,7 +10,7 @@ namespace BusinessLogic.Test
         public void Add_Works()
         {
             // arrange
-            const int TestValueA = 1;
+            const int TestValueA = -1;
             const int TestValueB = 1;
 
             var testee = new Calculator();
@@ -19,7 +19,7 @@ namespace BusinessLogic.Test
             var result = testee.Add(TestValueA, TestValueB);
 
             // assert
-            Assert.AreEqual(2, result);
+            Assert.AreEqual(0, result);
         }
     }
 }
