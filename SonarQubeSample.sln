@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SonarQubeSample", "SonarQub
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{18DF55D3-0A39-4FAF-8CE0-590F434141C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Test", "BusinessLogic.Test\BusinessLogic.Test.csproj", "{44C1AEA6-DC16-42DF-B209-C08AB884B210}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{18DF55D3-0A39-4FAF-8CE0-590F434141C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18DF55D3-0A39-4FAF-8CE0-590F434141C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18DF55D3-0A39-4FAF-8CE0-590F434141C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C1AEA6-DC16-42DF-B209-C08AB884B210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C1AEA6-DC16-42DF-B209-C08AB884B210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C1AEA6-DC16-42DF-B209-C08AB884B210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C1AEA6-DC16-42DF-B209-C08AB884B210}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
