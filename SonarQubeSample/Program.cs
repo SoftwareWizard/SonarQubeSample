@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using BusinessLogic;
 
 namespace SonarQubeSample
 {
+    [ExcludeFromCodeCoverage]
     public static class Program
     {
         public static void Main(string[] args)
